@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mark Bishop | Visual Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mark Bishop</h1>
+    <p>Senior Visual Designer</p>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Designing with Purpose & Passion</h2>
+    <p>Crafting visual experiences that connect and inspire.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <div class="project"><img src="images/project1.jpg" alt="Project 1" onclick="openLightbox(this.src)" /></div>
+      <div class="project"><img src="images/project2.jpg" alt="Project 2" onclick="openLightbox(this.src)" /></div>
+      <div class="project"><img src="images/project3.webp" alt="Project 3" onclick="openLightbox(this.src)" /></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a senior visual designer with a passion for clean, user-centered design. With over a decade of experience, I specialize in branding, UI/UX, and digital storytelling.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Lightbox Image" />
+  </div>
+
+  <footer>
+    <p>© 2025 Mark Bishop. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
